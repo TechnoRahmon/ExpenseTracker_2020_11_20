@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+  display: flex; 
+  justify-content: center;
+  align-items:  center;
+  flex-direction: column;
+  height: auto;
+  padding:30px;
+  border:1px solid #ff1744;
+  width :50%;
+  margin:60px auto;
+  border-radius: 30px;
+
+}
+
+
+h4{
+  text-align: left;
+  
+}
+
+/* .container{
+  display: flex;
+  justify-content: center;
+  width:100%;
+} */
+.container h3{
+  margin:20px 5px 0px 5px; 
+  width:100%;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+
+
+/************ Display ******/
+h2{
+  width:100%;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 250%;
+  margin-top:20px;
+}
+.Dis h2, .Dis span{
+  font-weight: bold;
+}
+h1{
+  width:100%;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 400%;
+  margin:0px;
+  padding:20px;
+  border-radius: 30px;
+}
+
+.total-box{
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/************ history ******/
+
+.com{
+  margin-top:0px; 
+  width: 100%;
+  
+}
+.history{
+  position: relative;
+  text-align: left;
+  margin-top:20px;
+}
+
+.items{
+  height: auto;
+  color :rgb(47, 47, 47);
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+  margin:15px auto;
+  
+}
+
+.item-card{
+  width:95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  margin:0 auto;
+  font-weight: bold;
+}
+
+.item-card span{
+  word-wrap: break-word;
+  width: 75%;
+  text-align: left;
+
+}
+.btn-small{
+  margin:auto 0;
+  color : wheat;
+  padding:0 12px;
+
+}
+
+.deleteButton{
+  visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s ,opacity 0.2s linear;
+  }
+
+/************ add Field ******/
+
+.addfield{
+  width: 100%;
+  margin-top:20px;
+}
+.addfield h2{
+  text-align: left;
+}
+
+
+   /* label focus color */
+    input[type=text]:focus, .input-field input[type=number]:focus {
+    color: rgb(24, 24, 24);
+    border-bottom: 2px solid rgb(250, 31, 31);
+   
+  }
+
+  .input-field input{
+    border-bottom: 2px solid rgb(250, 31, 31);
+
+  }
+  
+  
+  .input-field input[type=text]:focus label, .input-field input[type=number]:focus label { 
+    color: wheat;
+  }
+
+ 
