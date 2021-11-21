@@ -28,7 +28,7 @@ const History = () => {
         <div className="com history" >
             <h2>History</h2>
             {/* if array is not epmty */}
-            {State.transactions.length>0?State.transactions.map(item=>{
+            {State&&State.transactions.length>0?State.transactions.map(item=>{
                // console.log(item);
                return (
                    
