@@ -29,27 +29,19 @@ const History = () => {
             <h2>History</h2>
             {/* if array is not epmty */}
             {State&&State.transactions.length>0?State.transactions.map(item=>{
-               // console.log(item);
                return (
-                   
                 <div className="white items" key={item._id} onMouseOver={()=>{_ShowDeleteButton(item._id)}}  onMouseLeave={()=>{_UnshowDeleteButton(item._id)}}>
                     <a className="btn-small red accent-3 deleteButton" id={item._id} onClick={()=>{dispatch(deleteTrans(item._id ,State))}}><i className="material-icons">clear</i></a>
                     <div className="item-card z-depth-3">
                     <span className="  white">{item.description}</span> {/* if I hover is button  'x' span will appear */}
                         {item.value}  Kr
                     </div>
-
-                  
                 </div>
-            
-          
                )} 
                 ):(
                     // if array is epmty 
                 <h3>there is no transactions</h3> 
             )}
-
-    
         </div>
     );
 }
