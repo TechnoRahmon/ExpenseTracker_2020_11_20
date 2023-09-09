@@ -5,12 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start-prod":"set ENV=production && nodemon server.js"
+    "start-prod": "set ENV=production && nodemon server.js"
   },
   "engines": {
     "node": "14.20.0",
     "npm": "6.14.17"
-    },
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -20,6 +20,8 @@
     "mongoose": "^5.10.15",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }
