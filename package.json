@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "client": "npm start --prefix client",
+    "client": "npm start --prefix server/client",
     "server": "npm start --prefix server",
     "start": "concurrently \"npm run client\" \"npm run server\""
   },

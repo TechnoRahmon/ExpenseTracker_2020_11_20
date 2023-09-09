@@ -1,19 +1,24 @@
 .App {
   text-align: center;
   display: flex; 
-  justify-content: center;
-  align-items:  center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: self-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:25px;
   height: auto;
   padding:30px;
   border:1px solid #ff1744;
-  width :50%;
-  margin:60px auto;
-  border-radius: 30px;
-
+  width :100%;
+  margin:10px auto;
+  border-radius: 4px;
 }
-
-
+.App .display-histroy-section{
+  flex:3;
+}
+.App .add-section{
+  flex:2;
+}
 h4{
   text-align: left;
   
@@ -29,7 +34,7 @@ h4{
   width:100%;
   font-weight: 200;
   text-transform: uppercase;
-  font-size: x-large;
+  font-size: 22px;
 }
 
 
@@ -39,7 +44,7 @@ h2{
   width:100%;
   font-weight: 200;
   text-transform: uppercase;
-  font-size: 250%;
+  font-size: 24px;
   margin-top:20px;
 }
 .Dis h2, .Dis span{
@@ -49,10 +54,10 @@ h1{
   width:100%;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 400%;
+  font-size: 32px;
   margin:0px;
   padding:20px;
-  border-radius: 30px;
+  border-radius: 4px;
 }
 
 .total-box{
