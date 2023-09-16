@@ -4,8 +4,8 @@ Expense Tracker is a powerful financial management tool designed to help you eff
 
 ## Live Demo
 
-You can explore our project's   with a live demo by visiting the following link: [Demo](https://your-swagger-demo-link)
-and Swagger documentation [Swagger Demo](https://your-swagger-demo-link)
+You can explore our project's   with a live demo by visiting the following link: [Demo](https://expensetracker-technorahmon.b4a.run/)
+and Swagger documentation [Swagger Demo](https://expensetracker-technorahmon.b4a.run/api-docs/)
 
 Here is the content you provided, formatted in Markdown:
 
