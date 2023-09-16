@@ -1,7 +1,7 @@
-const get_SwaggerOptions = (ENV="development",port)=>{
+const get_SwaggerOptions = (ENV="development",port, productionUrl)=>{
     const serverUrl = ENV == "development" ? 
     `http://localhost:${port}` : 
-    "https://techno-expense-tracker-80692413a6b0.herokuapp.com";
+    productionUrl;
     
    return {
         definition: {
