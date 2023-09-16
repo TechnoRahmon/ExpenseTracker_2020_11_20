@@ -61,16 +61,52 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 
-## How to deploy
-- go to `cd server/client/` and run :
-  `npm run build`
+Here is the content you provided, rewritten in Markdown:
 
-    <br>
+## Expense Tracker Configuration File
 
-- got to `/server` and npm start
-  `npm run start`
+create a file contains the configuration for the Expense Tracker application.
+```bash
+/config/config.env
+```
+
+### Environment Variables
+
+- `NODE_ENV`: Defines the Node.js environment. Possible values include "development" and "production."
+- `ENV`: Specifies the deployment environment. This can be "local," "staging," or "production."
+- `PORT`: Sets the port on which the Express.js server will run.
+- `MONGO_URI`: Provides the MongoDB connection URI. This should include the hostname (e.g., mongo-server) and port (e.g., 27017).
+- `PROD_URL`: (Optional) If your application has a production URL, specify it here.
+
+## Docker Deployment
+
+Follow these steps to build and run your Docker image:
+
+1. **Build the Docker Image**: Use the following command to build a Docker image named "expense-tracker-image" with the tag "latest":
+    ```bash
+    docker build -t expense-tracker-image:latest .
+    ```
+2. **Run the Docker Container**: Start a Docker container with the built image, using your configuration file for environment variables:
+    ```bash
+    docker run -p 5000:5000 --env-file ./config/config.env --name expense-tracker expense-tracker
+    ```
+    In this command:
+    - `-p 5000:5000` maps port 5000 from your host machine to port 5000 in the Docker container.
+    - `--env-file ./config/config.env` specifies the path to your environment file.
+    - `--name expense-tracker-container` assigns a name to your Docker container.
+
+Your Expense Tracker application should now be running in a Docker container and accessible on port 5000 of your host machine.
 
 **We can use the `Express js` server to serve the `React` project js bundle.**
-## DESING PATTREN
+### DESING PATTREN
 
 **we are using: MVC Architect**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+**Email:** techno.r@outlook.com
+
+***Thank you for using my project :)!***
